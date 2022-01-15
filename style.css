@@ -1,111 +1,154 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ----products---- */
 
-.products{
-    
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.products {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
-.book{
-    border: 1px;
-    border-radius: 10px;
-background-color:deeppink;
-color: white;
-font-size: 20px;
+.book {
+  border: 1px;
+  border-radius: 10px;
+  background-color: deeppink;
+  color: white;
+  font-size: 20px;
 }
-.div-img{
-    width: 100%;
+.div-img {
+  width: 100%;
 }
-.photo:hover{
-    transform: scale(1.5);
-    transition: transform 2s ease-in-out;
+.photo:hover {
+  transform: scale(1.5);
+  transition: transform 2s ease-in-out;
 }
 /* ----cart styles---- */
 
-
-.popular{
-    text-align: center;
+.popular {
+  text-align: center;
 }
-.area{
-    display: flex;
-    gap: 15px;
-    justify-content: center
-
+.area {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
-.next{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-
+.next {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
-.previous{
-    display: flex;
-    gap:30px;
-    justify-content: center;
+.previous {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
-.blogs{
-    box-shadow: 4px 4px 4px 4px;
-    border-radius: 3px;
+.blogs {
+  box-shadow: 4px 4px 4px 4px;
+  border-radius: 3px;
 }
-.flexible{
-    padding: 5px;
+.flexible {
+  padding: 5px;
 }
-.tripod{
-    display: flex;
-    
+.tripod {
+  display: flex;
 }
-.filled{
-    color: yellow;
+.filled {
+  color: yellow;
 }
-.arrow{
-    color:deeppink ;
-    text-align: end;
+.arrow {
+  color: deeppink;
+  text-align: end;
 }
 /* -----featured products ---- */
 
-.features{
-    display: flex;
-    font-size: 25px;
+.features {
+  display: flex;
+  font-size: 25px;
 }
-.enter{
-    width: 100%;
+.enter {
+  width: 100%;
 }
-/* ------footer---- */
-.footer{
-    background-color: black;
-    text-align:center;
-    color: white;
+/* ------oer---- */
+.footer {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
 }
 /* -----MEDIA QUERIRES------ */
 
 /* ------------
 ----------------Mobile Devices---------- */
 
-@media only screen and (max-width:576px) {
-    .container{
-        display: grid;
-        max-width: 100%;
-        background-color: brown;
-        grid-template-columns: repeat(1,1fr); 
-    }
-    .parents{
-        display: grid;
-        grid-template-columns: repeat(1,1fr); 
-        max-width: 100%;
-    }
+.parents {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+  gap: 5px;
+}
+.blogs {
+  flex: 1 0 30%;
+}
+@media only screen and (max-width: 576px) {
+  .products {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .parents {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .features {
+    flex-direction: column;
+    display: flex;
+    font-size: 25px;
+  }
+  .blogs {
+    flex: 0 0 100%;
+  }
 }
 /* ----------------------
 -----------------tablet devices----------------------- */
-@media only screen and (max-width:767px) and (min-width:576px) {
-    .container{
-        display: grid;
-        max-width:100% ;
-        background-color: chartreuse;
-        grid-template-columns: repeat(2,1fr);
-    }
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  .blogs {
+    flex: 0 0 50%;
+  }
+  .products {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .parents {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .features {
+    flex-direction: column;
+    display: flex;
+    font-size: 25px;
+  }
 }

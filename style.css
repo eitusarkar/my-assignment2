@@ -29,21 +29,6 @@ body {
 .popular {
   text-align: center;
 }
-.area {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-.next {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-.previous {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
 .blogs {
   box-shadow: 4px 4px 4px 4px;
   border-radius: 3px;

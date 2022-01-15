@@ -110,7 +110,7 @@ body {
     flex-flow: wrap;
     max-width: 100%;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
   }
   .features {
     flex-direction: column;

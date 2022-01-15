@@ -1,0 +1,99 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----products---- */
+
+.products{
+    
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.book{
+    border: 1px;
+    border-radius: 10px;
+background-color:deeppink;
+color: white;
+font-size: 20px;
+}
+.div-img{
+    width: 100%;
+}
+.photo:hover{
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+}
+/* ----cart styles---- */
+
+
+.popular{
+    text-align: center;
+}
+.area{
+    display: flex;
+    gap: 15px;
+    justify-content: center
+
+}
+.next{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+.previous{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.blogs{
+    box-shadow: 4px 4px 4px 4px;
+    border-radius: 3px;
+}
+.flexible{
+    padding: 5px;
+}
+.tripod{
+    display: flex;
+    
+}
+.filled{
+    color: yellow;
+}
+.arrow{
+    color:deeppink ;
+    text-align: end;
+}
+/* -----featured products ---- */
+
+.features{
+    display: flex;
+    font-size: 25px;
+}
+.enter{
+    width: 100%;
+}
+/* ------footer---- */
+.footer{
+    background-color: black;
+    text-align:center;
+    color: white;
+}
+/* -----MEDIA QUERIRES------ */
+
+/* ------------
+----------------Mobile Devices---------- */
+@media only screen and (max-width:600px) {
+    .area{
+        background-color: brown;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+/* ----------------------
+-----------------tablet----------------------- */
+@media only screen and (min-width:768px) {
+    
+}

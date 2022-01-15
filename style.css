@@ -124,9 +124,6 @@ body {
 /* ----------------------
 -----------------tablet devices----------------------- */
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-  .blogs {
-    flex: 0 0 50%;
-  }
   .products {
     font-size: 18px;
     display: flex;
@@ -144,11 +141,14 @@ body {
     flex-flow: wrap;
     max-width: 100%;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
   }
   .features {
     flex-direction: column;
     display: flex;
     font-size: 25px;
+  }
+  .blogs {
+    flex: 0 0 50%;
   }
 }
